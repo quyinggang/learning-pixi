@@ -10,6 +10,7 @@ const boxElementRef = ref(null);
 
 const initStage = async (rootInfo) => {
   const { element, boundingRect } = rootInfo;
+  const dpr = window.devicePixelRatio;
 
   const app = new Application();
   // 设置视口宽度、高度
@@ -18,14 +19,16 @@ const initStage = async (rootInfo) => {
     height: boundingRect.height,
     // 开启抗锯齿
     antialias: true,
+    // 分辨率，用于解决多倍屏下的模糊问题
+    resolution: dpr,
   });
   element.appendChild(app.canvas);
 
   // screen表示的挂载canvas dom节点的父节点的矩形区域
   const screen = app.screen;
   const center = {
-    x: screen.width * 0.5,
-    y: screen.height * 0.5,
+    x: (screen.width / dpr) * 0.5,
+    y: (screen.height / dpr) * 0.5,
   };
 
   // 创建圆并且填充红色
