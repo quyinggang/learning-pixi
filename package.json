@@ -14,7 +14,7 @@
     "pre-commit": "pnpm exec lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{css,less,vue}": "stylelint --fix",
+    "src/**/*.{css,vue}": "stylelint --fix",
     "src/**/*.{js,vue}": "eslint --cache --fix"
   },
   "engines": {
@@ -32,11 +32,8 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.10.0",
-    "less": "^4.1.3",
     "lint-staged": "^13.2.0",
-    "postcss": "^8.4.21",
-    "postcss-html": "^1.5.0",
-    "postcss-less": "^6.0.0",
+    "postcss-html": "^1.6.0",
     "prettier": "^2.8.7",
     "simple-git-hooks": "^2.9.0",
     "stylelint": "^15.3.0",

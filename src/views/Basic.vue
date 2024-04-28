@@ -24,16 +24,16 @@ const initStage = async (rootInfo) => {
   });
   element.appendChild(app.canvas);
 
-  // screen表示的挂载canvas dom节点的父节点的矩形区域
+  // screen表示渲染器视口大小的矩形区域，需要注意dpr不作用其大小
   const screen = app.screen;
-  const center = {
+  const clientCenter = {
     x: (screen.width / dpr) * 0.5,
     y: (screen.height / dpr) * 0.5,
   };
 
   // 创建圆并且填充红色
   const circleGraphics = new Graphics();
-  circleGraphics.circle(center.x, center.y, 20);
+  circleGraphics.circle(clientCenter.x, clientCenter.y, 20);
   circleGraphics.fill('red');
 
   // 添加到场景中

@@ -47,7 +47,7 @@ watch(
   top: 0;
   left: 0;
   z-index: 10;
-  width: 180px;
+  width: 160px;
   height: 100%;
   padding-bottom: 20px;
   border-right: 1px solid #e8e8e8;
@@ -88,7 +88,7 @@ watch(
 }
 
 .main {
-  margin-left: 180px;
+  margin-left: 160px;
   height: 100%;
   background: #b6cdc0;
   overflow: hidden;
