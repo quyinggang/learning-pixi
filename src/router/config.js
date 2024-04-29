@@ -9,4 +9,9 @@ export default [
     title: '可渲染对象',
     componentName: 'DisplayObject',
   },
+  {
+    path: '/assets',
+    title: '资源加载进度',
+    componentName: 'AssetsProgress',
+  },
 ];
