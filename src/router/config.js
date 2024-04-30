@@ -19,4 +19,9 @@ export default [
     title: '纹理数据来源',
     componentName: 'TextureSource',
   },
+  {
+    path: '/filter',
+    title: '滤镜基本应用',
+    componentName: 'ApplyFilter',
+  },
 ];

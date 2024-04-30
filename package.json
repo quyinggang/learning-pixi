@@ -22,6 +22,7 @@
     "pnpm": ">=8"
   },
   "dependencies": {
+    "dat.gui": "^0.7.9",
     "pixi.js": "^8.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.3.2"
