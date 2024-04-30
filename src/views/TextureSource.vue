@@ -4,7 +4,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { Application, Assets, Sprite, Texture, CanvasSource } from 'pixi.js';
+import { Application, Assets, Sprite, Texture } from 'pixi.js';
 import GMImage from '@/assets/gm.jpg';
 import GMVideo from '@/assets/gm.mp4';
 
@@ -62,12 +62,19 @@ const createCanvasTexture = () => {
   context.fillStyle = 'green';
   context.fill();
 
-  // 创建canvas source从而创建纹理
-  const texture = Texture.from(
-    new CanvasSource({
-      resource: canvas,
-    })
-  );
+  /*
+    创建canvas source从而创建纹理
+    - CanvasSource API在PIXI官网并没有提及到，是PIXI内部使用的，需要看源码才能知道
+    - Texture.from(id, skipCache)：id表示类TextureSource，可以是TextSource对象 或者 {resource}对象
+  */
+  // 实现方式1
+  // const texture = Texture.from(
+  //   new CanvasSource({
+  //     resource: canvas,
+  //   })
+  // );
+  // 实现方式2
+  const texture = Texture.from({ resource: canvas });
   const sprite = new Sprite(texture);
 
   sprite.width = 320;
