@@ -14,4 +14,9 @@ export default [
     title: '资源加载进度',
     componentName: 'AssetsProgress',
   },
+  {
+    path: '/resource',
+    title: '纹理数据来源',
+    componentName: 'TextureSource',
+  },
 ];
