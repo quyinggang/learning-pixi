@@ -34,4 +34,9 @@ export default [
     title: '事件基本应用',
     componentName: 'ApplyEvent',
   },
+  {
+    path: '/area',
+    title: 'Area和Bounds',
+    componentName: 'AreaBounds',
+  },
 ];
