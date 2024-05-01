@@ -113,6 +113,9 @@ const initScene = async (rootInfo) => {
    - toGlobal：转换成父坐标下坐标
 
    PIXI中坐标系与canvas坐标系相同，都是以左上角为(0,0)点的
+   需要注意：
+   - 不同的可渲染对象的坐标系是些区别的
+   - 通常情况下都是左上角为(0,0)，对于圆则是中心点为(0,0)
   */
   // 父容器下的(10, 0)在rect坐标系中对应的位置
   // const local = rect.toLocal({ x: 10, y: 0})

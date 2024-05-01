@@ -29,4 +29,9 @@ export default [
     title: 'Transform与坐标系',
     componentName: 'TransformAttribute',
   },
+  {
+    path: '/event',
+    title: '事件基本应用',
+    componentName: 'ApplyEvent',
+  },
 ];
