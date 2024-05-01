@@ -24,4 +24,9 @@ export default [
     title: '滤镜基本应用',
     componentName: 'ApplyFilter',
   },
+  {
+    path: '/transform',
+    title: 'Transform与坐标系',
+    componentName: 'TransformAttribute',
+  },
 ];

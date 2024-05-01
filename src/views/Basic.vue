@@ -33,14 +33,14 @@ const initScene = async (rootInfo) => {
 
   // screen表示渲染器视口大小的矩形区域
   const screen = app.screen;
-  const clientCenter = {
+  const center = {
     x: screen.width * 0.5,
     y: screen.height * 0.5,
   };
 
   // 创建圆并且填充红色
   const circleGraphics = new Graphics();
-  circleGraphics.circle(clientCenter.x, clientCenter.y, 20);
+  circleGraphics.circle(center.x, center.y, 20);
   circleGraphics.fill('red');
 
   // 添加到场景中
