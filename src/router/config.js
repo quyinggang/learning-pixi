@@ -46,7 +46,12 @@ export default [
   },
   {
     path: '/mask',
-    title: 'Mask的基本应用',
+    title: 'Mask基本应用',
     componentName: 'ApplyMask',
+  },
+  {
+    path: '/shader',
+    title: '自定义shader',
+    componentName: 'CustomShader',
   },
 ];
