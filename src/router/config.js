@@ -44,4 +44,9 @@ export default [
     title: '更多的可渲染对象',
     componentName: 'DisplayObject2',
   },
+  {
+    path: '/mask',
+    title: 'Mask的基本应用',
+    componentName: 'ApplyMask',
+  },
 ];
