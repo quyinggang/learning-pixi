@@ -6,7 +6,7 @@ export default [
   },
   {
     path: '/display',
-    title: '可渲染对象',
+    title: '基础的可渲染对象',
     componentName: 'DisplayObject',
   },
   {
@@ -38,5 +38,10 @@ export default [
     path: '/area',
     title: 'Area和Bounds',
     componentName: 'AreaBounds',
+  },
+  {
+    path: '/display2',
+    title: '更多的可渲染对象',
+    componentName: 'DisplayObject2',
   },
 ];

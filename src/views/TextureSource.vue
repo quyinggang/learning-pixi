@@ -66,7 +66,8 @@ const createCanvasTexture = () => {
     创建canvas source从而创建纹理
     - CanvasSource API在PIXI官网并没有提及到，是PIXI内部使用的，需要看源码才能知道
     - Texture.from(id, skipCache)：id表示类TextureSource，可以是TextSource对象 或者 {resource}对象
-    - 实际上还有其他方式，涉及到源码，推荐使用上面两种方式
+    - Sprite.from(id, skipCache)
+    - 实际上还有其他方式，涉及到源码，推荐使用上面方式
   */
   // 实现方式1
   // const texture = Texture.from(
