@@ -1,0 +1,1 @@
+import{u as e}from"./index-c08b86c0.js";import{U as o}from"./TexturePool-7061bd7f.js";const t=new Int32Array(e);for(let r=0;r<e;r++)t[r]=r;const i=new o({uTextures:{value:t,type:"i32",size:e}},{isStatic:!0});export{i as b};
