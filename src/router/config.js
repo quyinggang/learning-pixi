@@ -56,7 +56,12 @@ export default [
   },
   {
     path: '/target',
-    title: '渲染对象与纹理',
+    title: '渲染对象与可渲染纹理',
     componentName: 'TextureTarget',
+  },
+  {
+    path: '/panzoom',
+    title: '页面拖动与缩放',
+    componentName: 'PanZoom',
   },
 ];
