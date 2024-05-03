@@ -64,4 +64,9 @@ export default [
     title: '页面拖动与缩放',
     componentName: 'PanZoom',
   },
+  {
+    path: '/plugin',
+    title: '部分常用生态工具',
+    componentName: 'ApplyPlugin',
+  },
 ];

@@ -5,9 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@pixi/sound':
+    specifier: ^6.0.0
+    version: 6.0.0(pixi.js@8.1.0)
+  '@pixi/ui':
+    specifier: ^2.0.1
+    version: 2.0.1(pixi.js@8.1.0)
   dat.gui:
     specifier: ^0.7.9
     version: 0.7.9
+  pixi-filters:
+    specifier: ^6.0.3
+    version: 6.0.3(pixi.js@8.1.0)
   pixi.js:
     specifier: ^8.1.0
     version: 8.1.0
@@ -279,12 +288,34 @@ packages:
     resolution: {integrity: sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==}
     dev: false
 
+  /@pixi/sound@6.0.0(pixi.js@8.1.0):
+    resolution: {integrity: sha512-fEaCs2JmyYT1qqouFS3DydSccI35dyYD0pKK2hEbIGVDKUTvl224x0p4qme2YU9l465WRtM7gspLzP5fFf1mxQ==}
+    peerDependencies:
+      pixi.js: ^8.0.0
+    dependencies:
+      pixi.js: 8.1.0
+    dev: false
+
+  /@pixi/ui@2.0.1(pixi.js@8.1.0):
+    resolution: {integrity: sha512-yGXZuZyf8DY34FWm3JDmsmL6XYouWtsKJFBDZ5K6bFnJYYN/ZolSYcU4rSyOTBA9C1vkmWCX2lQWpEfyPRv91Q==}
+    peerDependencies:
+      pixi.js: ^8.0.2
+    dependencies:
+      pixi.js: 8.1.0
+      tweedle.js: 2.1.0
+      typed-signals: 2.5.0
+    dev: false
+
   /@types/css-font-loading-module@0.0.12:
     resolution: {integrity: sha512-x2tZZYkSxXqWvTDgveSynfjq/T2HyiZHXb00j/+gy19yp70PHCizM48XFdjBCWH7eHBD0R5i/pw9yMBP/BH5uA==}
     dev: false
 
   /@types/earcut@2.1.4:
     resolution: {integrity: sha512-qp3m9PPz4gULB9MhjGID7wpo3gJ4bTGXm7ltNDsmOvsPduTeHp8wSW9YckBj3mljeOh4F0m2z/0JKAALRKbmLQ==}
+    dev: false
+
+  /@types/gradient-parser@0.1.5:
+    resolution: {integrity: sha512-r7K3NkJz3A95WkVVmjs0NcchhHstC2C/VIYNX4JC6tieviUNo774FFeOHjThr3Vw/WCeMP9kAT77MKbIRlO/4w==}
     dev: false
 
   /@vue/devtools-api@6.6.1:
@@ -383,6 +414,15 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
+  /pixi-filters@6.0.3(pixi.js@8.1.0):
+    resolution: {integrity: sha512-dywEQ68HbHJbU0KPOBhntI76GzJDXSCSiqkEOmSeT6n8BdgKzV3dwl7J8vR07PsF+uYKHJE2ehayKhSiWRxw/w==}
+    peerDependencies:
+      pixi.js: '>=8.0.0-0'
+    dependencies:
+      '@types/gradient-parser': 0.1.5
+      pixi.js: 8.1.0
+    dev: false
+
   /pixi.js@8.1.0:
     resolution: {integrity: sha512-qclFipWxKavNZoOE0QjGgEklbxjc1mpHf46adsxYLz7O7RnV44PPkq1J5Ssa6y1JxtYUX0fwbphoE/gz276glA==}
     dependencies:
@@ -439,6 +479,14 @@ packages:
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
+
+  /tweedle.js@2.1.0:
+    resolution: {integrity: sha512-0ReQgVjepoZkE6t0upWNgCRbplHkQJQYk1LStXugwSR728GLFmGDRuaQJlxeC/iBlxud6+P1RdODjaO25vHAqw==}
+    dev: false
+
+  /typed-signals@2.5.0:
+    resolution: {integrity: sha512-m9lHc3eBCJerXYdx+G0uWZihyUXdqTzzgOdqiDDsoUo75WjhFJH6vP5/6w/xhyu04zoxHUqgYhf9FEt85dk/Ng==}
+    dev: false
 
   /vue-router@4.3.2(vue@3.2.47):
     resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
