@@ -54,4 +54,9 @@ export default [
     title: '自定义shader',
     componentName: 'CustomShader',
   },
+  {
+    path: '/target',
+    title: '渲染对象与纹理',
+    componentName: 'TextureTarget',
+  },
 ];
